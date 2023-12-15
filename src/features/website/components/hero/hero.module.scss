@@ -1,0 +1,17 @@
+.container {
+    background: #EF5931;
+    padding: 150px 0px 110px 0px;
+    position: relative;
+    // overflow-y: hidden;
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    
+    }
+}
+

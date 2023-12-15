@@ -1,0 +1,37 @@
+.container {
+    padding: 16px 0px;
+    background: rgba(237, 99, 63, 0.80);
+    position: relative;
+    z-index: 2;
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+            color: #033D62;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21.982px;
+        }
+        .titles {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 24px;
+            color: #fff;
+        }
+        .links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+    }
+
+}
+

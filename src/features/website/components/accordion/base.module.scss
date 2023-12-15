@@ -1,0 +1,14 @@
+.accordionContainer {
+  display: flex;
+  gap: 10px;
+  padding: 16px 0px;
+  align-items: flex-start;
+  align-self: stretch;
+  cursor: pointer;
+  border-top: 1.5px solid #f5f7fa;
+  border-bottom: 2px solid #f5f7fa;
+  max-width: 712px;
+  width: 100%;
+  justify-content: space-between;
+  overflow-y: auto;
+}
