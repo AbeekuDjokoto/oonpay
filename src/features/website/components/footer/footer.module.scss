@@ -1,12 +1,6 @@
 .container {
     padding: 46px 0px;
     background: #EF5931;
-    .wrapper {
-        width: 90%;
-        margin: auto;
-        max-width: 1440px;
-        display: flex;
-        justify-content: space-between;
         .title {
             color: #033D62;
             font-feature-settings: 'clig' off, 'liga' off;
@@ -28,7 +22,5 @@
             align-items: center;
            
         }
-    }
-
 }
 

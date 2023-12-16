@@ -7,8 +7,8 @@ export default function Navigation() {
     <nav className={styles.container}>
       <div className={styles.wrapper}>
         <h1 className={styles.title}>Oonpay</h1>
-        <div className="flex justify-between gap-8">
-          <ul className={styles.titles}>
+        <div className="flex justify-between gap-8 items-center">
+          <ul className="text-white text-base leading-[21.982px] sm:flex gap-6 hidden">
             <li>About</li>
             <li>Services</li>
             <li>Support</li>

@@ -10,7 +10,7 @@ export default function Main() {
   return (
     <div className={styles.wrapper}>
       <AnimatedSection>
-        <h1 className="text-[48px] mx-auto tracking-[-1.1px] font-medium leading-[110%] text-center text-[#151515] max-w-[600px] w-full">
+        <h1 className="text-[48px] max-sm:text-[28px] mx-auto tracking-[-1.1px] font-medium leading-[110%] text-center text-[#151515] max-w-[600px] w-full">
           Our comprehensive range of exceptional services
         </h1>
       </AnimatedSection>
@@ -35,9 +35,9 @@ export default function Main() {
           </div>
         </AnimatedSection>
         <AnimatedSection>
-          <div className="flex justify-between gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 justify-between gap-6">
             <div className="flex flex-col justify-between items-center rounded-[32px] bg-[#F9FAFB] pt-[45px] px-[45px]">
-              <div className="flex flex-col gap-[10px] max-w-[546px] w-full h-[250px]">
+              <div className="flex flex-col gap-[10px] max-w-[546px] w-full justify-between">
                 <div className="flex flex-col gap-5">
                   <img
                     src={remoteIcon}
@@ -56,8 +56,8 @@ export default function Main() {
               </div>
               <img src={vouchers} alt="" />
             </div>
-            <div className="flex flex-col items-center rounded-[32px] bg-[#F9FAFB] pt-[45px] px-[45px]">
-              <div className="flex flex-col gap-[10px] h-[250px] max-w-[546px] w-full">
+            <div className="flex flex-col justify-between items-center rounded-[32px] bg-[#F9FAFB] pt-[45px] px-[45px]">
+              <div className="flex flex-col gap-[10px]  max-w-[546px] w-full">
                 <div className="flex flex-col gap-5">
                   <img
                     src={remoteIcon}
@@ -68,7 +68,7 @@ export default function Main() {
                     Pre-Paid Vouchers
                   </h2>
                 </div>
-                <p className="text-sm leading-[160%] w-full  text-[#98A2B3]">
+                <p className="text-sm leading-[160%] w-full text-[#98A2B3]">
                   Oonpay enables users to effortlessly send wholesale food
                   vouchers and prepaid healthcare packs to friends and family
                   globally, fostering support and connection from anywhere in
@@ -81,8 +81,8 @@ export default function Main() {
         </AnimatedSection>
 
         <AnimatedSection>
-          <div className="flex justify-between gap-6">
-            <div className="flex flex-col justify-between items-center rounded-[32px] bg-[#F9FAFB] h-[306px] px-4 pt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex flex-col justify-between items-center rounded-[32px] bg-[#F9FAFB] p-4 w-full">
               <div className="flex flex-col gap-[10px] max-w-[380px] w-full">
                 <div className="flex flex-col gap-5">
                   <img
@@ -101,7 +101,7 @@ export default function Main() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col justify-between items-center rounded-[32px] bg-[#F9FAFB] h-[306px] px-4 pt-4">
+            <div className="flex flex-col justify-between items-center rounded-[32px] bg-[#F9FAFB] p-4 w-full">
               <div className="flex flex-col gap-[10px] max-w-[380px] w-full">
                 <div className="flex flex-col gap-5">
                   <img
