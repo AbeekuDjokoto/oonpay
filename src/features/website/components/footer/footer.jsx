@@ -3,6 +3,7 @@ import styles from "./footer.module.scss";
 import whiteGoogle from "../../../../assets/icons/whitegoogleapp.svg";
 import appApple from "../../../../assets/icons/applewhite.svg";
 import { AnimatedSection } from "../AnimateSection";
+import logo from "../../../../assets/icons/logo.png";
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
       <AnimatedSection>
         <div className="max-w-[1440px] w-[90%] mx-auto justify-between grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-6">
           <div className="flex flex-col gap-4">
-            <h1 className={styles.title}>Oonpay</h1>
+            <img src={logo} alt="Oonpay logo" className="max-w-[50px] w-full" />
             <p className="text-sm leading-[160%] w-full  text-white">
               Start Spending the smart way
             </p>

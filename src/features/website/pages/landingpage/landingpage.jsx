@@ -8,8 +8,8 @@ import Footer from "../../components/footer/footer";
 
 export default function Landingpage() {
   return (
-    <div className="flex flex-col gap-[140px] max-w-[1440px] w-full overflow-hidden">
-      <div className="bg-[#EF5931]">
+    <div className="flex flex-col gap-[140px] w-full">
+      <div className="bg-[#0C4369]">
         <Navigation />
         <HeroSection />
       </div>

@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./hero.module.scss";
-import AppStoreLogo from "../../../../../src/assets/icons/GooglePlayLogo.svg";
-import GooglePlayLogo from "../../../../../src/assets/icons/Mobileappstorebadge.svg";
 import man from "../../../../../src/assets/images/man.svg";
 import pharmacy from "../../../../../src/assets/images/pharmacy.svg";
 import app from "../../../../../src/assets/images/app.svg";
@@ -11,6 +9,7 @@ import circle from "../../../../../src/assets/images/circle.png";
 import smallerCircle from "../../../../../src/assets/images/smallerCircle.png";
 import { motion } from "framer-motion";
 import { AnimatedSection } from "../AnimateSection";
+import { Button } from "../button";
 
 export default function HeroSection() {
   return (
@@ -33,19 +32,17 @@ export default function HeroSection() {
                 Connecting, Uplifting, and Supporting Family and Friends.
               </p>
             </div>
-
-            <div className="flex gap-3">
-              <img src={AppStoreLogo} alt="" srcset="" />
-              <img src={GooglePlayLogo} alt="" srcset="" />
-            </div>
+            <Button variant="primary" className="max-w-[216px] w-full text-sm">
+              Join The Network
+            </Button>
           </div>
-          <div className="hidden flex-col gap-9 lg:flex">
-            <div>
+          <div className="hidden flex-col gap-9 lg:flex max-w-[571px] w-full max-h-[540px] h-full">
+            <div className="relative">
               <motion.img
                 src={man}
                 alt=""
                 srcset=""
-                className={`absolute left-[60%] top-[-20%] max-w-[120px] w-full z-[2]`}
+                className={`absolute left-[25%] top-[-80%] max-w-[120px] w-full z-[2]`}
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ repeat: Infinity, duration: 2, delay: 0.5 }}
               />
@@ -53,7 +50,7 @@ export default function HeroSection() {
                 src={app}
                 alt=""
                 srcset=""
-                className="absolute left-[52%] top-[30%] max-w-[120px] w-full"
+                className="max-w-[120px] w-full"
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ repeat: Infinity, duration: 2, delay: 1 }}
               />
@@ -61,7 +58,7 @@ export default function HeroSection() {
                 src={pharmacy}
                 alt=""
                 srcset=""
-                className="absolute left-[60%] bottom-[-30%] max-w-[120px] w-full z-[2]"
+                className="absolute left-[25%] top-[100%] max-w-[120px] w-full z-[2]"
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ repeat: Infinity, duration: 2, delay: 0.5 }}
               />
@@ -69,7 +66,7 @@ export default function HeroSection() {
                 src={handHoldingApp}
                 alt=""
                 srcset=""
-                className="absolute left-[65%] bottom-[-43%]"
+                className="absolute left-[35%] bottom-[-160%]"
               />
             </div>
           </div>
