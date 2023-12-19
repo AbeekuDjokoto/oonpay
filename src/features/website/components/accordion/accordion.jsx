@@ -1,8 +1,8 @@
 import React from "react";
 import { Expandable } from "../Expandable";
 import styles from "./base.module.scss";
-import XIcon from "../../../../assets/icons/xicon.svg";
-import PlusIcon from "../../../../assets/icons/plusicon.svg";
+import XIcon from "../../../../assets/icons/arrow-up.svg";
+import PlusIcon from "../../../../assets/icons/arrow-down.svg";
 import { accordionData } from "./mock";
 import { AnimatedSection } from "../AnimateSection";
 
@@ -28,7 +28,9 @@ export default function Accordion() {
               onClick={() => toggleAccordion(data.id)}
             >
               <div className={styles.accordionContainer}>
-                <h3 className="text-sm leading-[150%]">{data.question}</h3>
+                <h3 className="text-sm leading-[150%] text-[#343A40]">
+                  {data.question}
+                </h3>
                 {openAccordionId === data.id ? (
                   <>
                     <img src={XIcon} alt="" />
@@ -41,8 +43,8 @@ export default function Accordion() {
               </div>
               <Expandable expand={openAccordionId === data.id}>
                 <p
-                  className="text-sm leading-[160%] font-normal"
-                  style={{ color: "rgba(14, 30, 47, 0.8)" }}
+                  className="text-sm leading-[160%]"
+                  style={{ color: "#505D69" }}
                 >
                   {data.content}
                 </p>

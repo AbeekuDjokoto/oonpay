@@ -10,12 +10,7 @@ export default function Footer() {
     <nav className={styles.container}>
       <AnimatedSection>
         <div className="max-w-[1440px] w-[90%] mx-auto justify-between grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-          <div className="flex flex-col gap-4">
-            <img src={logo} alt="Oonpay logo" className="max-w-[50px] w-full" />
-            <p className="text-sm leading-[160%] w-full  text-white">
-              Start Spending the smart way
-            </p>
-          </div>
+          <img src={logo} alt="Oonpay logo" className="max-w-[50px] w-full" />
           <div className="flex flex-col gap-4">
             <h1 className="text-sm font-medium leading-[160%] w-full text-white">
               Services
