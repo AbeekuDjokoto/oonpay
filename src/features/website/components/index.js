@@ -8,3 +8,4 @@ export * from "./accordion";
 export * from "./footer";
 export * from "./AnimateSection";
 export * from "./Search";
+export * from "./menu";

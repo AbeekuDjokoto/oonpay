@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../button/button";
 import styles from "./navigation.module.scss";
 import logo from "../../../../assets/icons/logo.png";
+import Menu from "../menu/menu";
 
 export default function Navigation() {
   return (
@@ -16,9 +17,14 @@ export default function Navigation() {
             <li>Support</li>
             <li>Contact</li>
           </ul>
-          <Button variant="primary" className="max-w-[115px] w-full text-sm">
-            Login
-          </Button>
+          <div className="sm:hidden">
+            <Menu />
+          </div>
+          <div className="hidden sm:flex">
+            <Button variant="primary" className="max-w-[115px] w-full text-sm">
+              Login
+            </Button>
+          </div>
         </div>
       </div>
     </nav>
