@@ -8,14 +8,18 @@ import womandialysis from "../../../../assets/images/womandialysis.png";
 import foodvoucher from "../../../../assets/images/foodvoucher.png";
 import manholdingapp from "../../../../assets/images/manholdingapp.png";
 import qrcode from "../../../../assets/images/qrcode.png";
+import { Search } from "../Search";
 
 export default function Main() {
   return (
     <div className={styles.wrapper}>
       <AnimatedSection>
-        <h1 className="text-[48px] max-sm:text-[28px] mx-auto tracking-[-1.1px] font-medium leading-[110%] text-center text-[#151515] max-w-[600px] w-full">
-          Our comprehensive range of exceptional services
-        </h1>
+        <div className="flex flex-col gap-[80px]">
+          <h1 className="text-[48px] max-sm:text-[28px] mx-auto tracking-[-1.1px] font-medium leading-[110%] text-center text-[#151515] max-w-[600px] w-full">
+            Our comprehensive range of exceptional services
+          </h1>
+          <Search placeholder="Search for #playtag, #funding, Invoice" />
+        </div>
       </AnimatedSection>
 
       <main className="flex flex-col gap-6">
