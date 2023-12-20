@@ -1,6 +1,4 @@
 import styles from "./base.module.scss";
-import remoteIcon from "../../../../../src/assets/icons/remoteIcon.svg";
-import partnerIcon from "../../../../../src/assets/icons/partnerIcon.svg";
 import map from "../../../../../src/assets/images/map.svg";
 import { Button } from "../button";
 import { AnimatedSection } from "../AnimateSection";
@@ -15,161 +13,234 @@ export default function Main() {
     <div className={styles.wrapper}>
       <AnimatedSection>
         <div className="flex flex-col gap-[80px]">
+          <Search placeholder="Search for #playtag, #funding, Invoice" />
           <h1 className="text-[48px] max-sm:text-[28px] mx-auto tracking-[-1.1px] font-medium leading-[110%] text-center text-[#151515] max-w-[600px] w-full">
             Our comprehensive range of exceptional services
           </h1>
-          <Search placeholder="Search for #playtag, #funding, Invoice" />
         </div>
       </AnimatedSection>
 
       <main className="flex flex-col gap-6">
-        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
+          {/* left */}
           <AnimatedSection>
-            <div className="flex items-center justify-between rounded-[32px] sm:h-[380px] bg-[#F6F9FD] py-4 px-6 lg:pt-2 lg:pr-6 mt-[80px]">
+            <div className="flex items-center justify-between gap-4 rounded-[32px] sm:h-[380px]  py-4 px-6 lg:pt-2 lg:pr-6 mt-[80px]">
               <div className="w-[502px] relative hidden lg:flex">
                 <img src={womandialysis} alt="" />
               </div>
               <div className="flex flex-col gap-2 justify-between mx-auto">
-                <div className="rounded-full bg-[#E4F1FE] text-xl font-black flex justify-center items-center text-white h-[40px] w-[40px]">
-                  <p>1</p>
-                </div>
+                <p className="text-[#1472B4] text-xs leading-[140%] tracking-[0.06px]">
+                  HealthHub Service
+                </p>
 
-                <div className="flex flex-col gap-4 max-w-[450px] w-full">
-                  <h2 className="text-[30px] leading-[110%] text-[#343A40]">
+                <div className="flex flex-col gap-2 max-w-[470px] w-full text-[#333] leading-[140%]">
+                  <h2 className="text-xl font-medium">
                     Pre-Paid Health Vouchers
                   </h2>
-                  <div className="text-sm leading-[160%] w-full text-[#505D69] flex flex-col gap-2">
+                  <div className="text-sm w-full tracking-[0.21px] flex flex-col gap-2 opacity-80 class-lato">
                     <p>
                       Use the Oonpay pre-paid vouchers to send healthcare pack
                       to friends and family in Africa and beyond.
                     </p>
-                    <ul>
-                      <li>1. Wellness and preventive check vouchers</li>
-                      <li>2. Physiotherapy session vouchers</li>
-                      <li>3. Pre-natal care vouchers</li>
-                      <li>4. Dental and eye check vouchers</li>
-                      <li>5. Diagnostic service vouchers</li>
-                      <li>6. Covid vaccine vouchers</li>
-                      <li>7. Home lab services vouchers</li>
-                    </ul>
+                    <div className="flex flex-col gap-7">
+                      <div>
+                        <p>Physiotherapy session vouchers</p>
+                        <p>Pre-natal care vouchers</p>
+                        <p>Dental and eye check vouchers</p>
+                        <p>Diagnostic service vouchers</p>
+                        <p>Home lab services vouchers</p>
+                      </div>
+                      <div className="flex flex-col gap-4">
+                        <hr />
+                        <div className="flex justify-items-end">
+                          <Button
+                            variant="outline"
+                            className="max-w-[126px] w-full"
+                          >
+                            Learn More
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </AnimatedSection>
+          {/* Right */}
           <AnimatedSection>
-            <div className="flex items-center justify-between rounded-[32px] sm:h-[380px] bg-[#F6F9FD] py-4 px-6 lg:pt-2 lg:pr-6">
+            <div className="flex items-center justify-between gap-4 rounded-[32px] sm:h-[380px]  py-4 px-6 lg:pt-2 lg:pr-6 mt-[80px]">
               <div className="flex flex-col gap-2 justify-between mx-auto">
-                <div className="rounded-full bg-[#E4F1FE] text-xl font-black flex justify-center items-center text-white h-[40px] w-[40px]">
-                  <p>2</p>
-                </div>
+                <p className="text-[#1472B4] text-xs leading-[140%] tracking-[0.06px]">
+                  FoodHub Service
+                </p>
 
-                <div className="flex flex-col gap-4 max-w-[450px] w-full">
-                  <h2 className="text-[30px] leading-[110%] text-[#343A40]">
+                <div className="flex flex-col gap-2 max-w-[470px] w-full text-[#333] leading-[140%]">
+                  <h2 className="text-xl font-medium">
                     Pre-Paid Food Vouchers
                   </h2>
-                  <div className="text-sm leading-[160%] w-full text-[#505D69] flex flex-col gap-2">
+                  <div className="text-sm w-full tracking-[0.21px] flex flex-col gap-2 opacity-80 class-lato">
                     <p>
                       With the Oonpay food vouchers, wholesale food items such
                       as bags of rice, beans, tubers of yam, etc, can be
                       purchased for friends and relatives from anywhere in the
                       world.
                     </p>
-                    <ul>
-                      <li>1. Whole food vouchers</li>
-                      <li>2. Specialty food vouchers</li>
-                      <li>3. Frozen food vouchers</li>
-                      <li>4. Cooked meals vouchers</li>
-                      <li>5. Snacks vouchers</li>
-                      <li>6. Diabetic meals vouchers</li>
-                    </ul>
+                    <div className="flex flex-col gap-7">
+                      <div>
+                        <p>Whole food vouchers</p>
+                        <p>Specialty food vouchers</p>
+                        <p>Frozen food vouchers</p>
+                        <p>Cooked meals vouchers</p>
+                        <p>Diabetic meals vouchers</p>
+                      </div>
+
+                      <div className="flex flex-col gap-4">
+                        <hr />
+                        <div className="flex justify-items-end">
+                          <Button
+                            variant="outline"
+                            className="max-w-[126px] w-full"
+                          >
+                            Learn More
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="w-[502px] h-[360px] relative hidden lg:flex">
+              <div className="w-[502px] relative hidden lg:flex">
                 <img src={foodvoucher} alt="" />
               </div>
             </div>
           </AnimatedSection>
+          {/* left */}
           <AnimatedSection>
-            <div className="flex items-center justify-between rounded-[32px] sm:h-[380px] bg-[#F6F9FD] py-4 px-6 lg:pt-2 lg:pr-6">
-              <div className="relative hidden lg:flex w-[502px]">
-                <img src={manholdingapp} alt="" className="h-[460px]" />
+            <div className="flex items-center justify-between gap-4 rounded-[32px] sm:h-[380px]  py-4 px-6 lg:pt-2 lg:pr-6 mt-[80px]">
+              <div className="w-[502px] relative hidden lg:flex">
+                <img src={manholdingapp} alt="" />
               </div>
               <div className="flex flex-col gap-2 justify-between mx-auto">
-                <div className="rounded-full bg-[#E4F1FE] text-xl font-black flex justify-center items-center text-white h-[40px] w-[40px]">
-                  <p>3</p>
-                </div>
+                <p className="text-[#1472B4] text-xs leading-[140%] tracking-[0.06px]">
+                  HealthHub Paytag Service
+                </p>
 
-                <div className="flex flex-col gap-4 max-w-[450px] w-full">
-                  <h2 className="text-[30px] leading-[110%] text-[#343A40]">
-                    Paytag
+                <div className="flex flex-col gap-2 max-w-[470px] w-full text-[#333] leading-[140%]">
+                  <h2 className="text-xl font-medium">
+                    Pre-Paid Health Vouchers
                   </h2>
-                  <div className="text-sm leading-[160%] w-full text-[#505D69] flex flex-col gap-2">
+                  <div className="text-sm w-full tracking-[0.21px] flex flex-col gap-2 opacity-80 class-lato">
                     <p>
-                      Use the Oonpay #paytag invoice to pay for the following
-                      services or bill:
+                      Use the Oonpay service vouchers #paytag invoice to pay for the following.
                     </p>
-                    <ul>
-                      <li>1. Hospital and medical care bills</li>
-                      <li>2. Home health visits</li>
-                      <li>3. Medications</li>
-                      <li>4. Diagnostic services</li>
-                      <li>5. Dental and eye care services</li>
-                    </ul>
+                    <div className="flex flex-col gap-7">
+                      <div>
+                        <p>Hospital and medical care bills</p>
+                        <p>Home health visits</p>
+                        <p>Medications</p>
+                        <p>Diagnostic services</p>
+                        <p>Dental and eye care services</p>
+                      </div>
+                      <div className="flex flex-col gap-4">
+                        <hr />
+                        <div className="flex justify-items-end">
+                          <Button
+                            variant="outline"
+                            className="max-w-[126px] w-full"
+                          >
+                            Learn More
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </AnimatedSection>
+          {/* Right */}
           <AnimatedSection>
-            <div className="flex items-center justify-between rounded-[32px] sm:h-[380px] bg-[#F6F9FD] py-4 px-6 lg:pt-2 lg:pr-6">
+            <div className="flex items-center justify-between gap-4 rounded-[32px] sm:h-[380px]  py-4 px-6 lg:pt-2 lg:pr-6 mt-[80px]">
               <div className="flex flex-col gap-2 justify-between mx-auto">
-                <div className="rounded-full bg-[#E4F1FE] text-xl font-black flex justify-center items-center text-white h-[40px] w-[40px]">
-                  <p>4</p>
-                </div>
+                <p className="text-[#1472B4] text-xs leading-[140%] tracking-[0.06px]">
+                  HealthHub Service
+                </p>
 
-                <div className="flex flex-col gap-4 max-w-[450px] w-full">
-                  <h2 className="text-[30px] leading-[110%] text-[#343A40]">
+                <div className="flex flex-col gap-2 max-w-[470px] w-full text-[#333] leading-[140%]">
+                  <h2 className="text-xl font-medium">
                     QR-Code Instant Payment
                   </h2>
-                  <div className="text-sm leading-[160%] w-full text-[#505D69] flex flex-col gap-2">
+                  <div className="text-sm w-full tracking-[0.21px] flex flex-col gap-2 opacity-80 class-lato">
                     <p>
                       Use the Oonpay QR-code instant, easy and secure payment
                       method to process on-site bills and enjoy touchless
                       payments.
                     </p>
-                    <ul>
-                      <li>1. Hospital admission fees</li>
-                      <li>2. Emergency ambulatory service</li>
-                      <li>3. Urgent medical needs</li>
-                      <li>4. Medications</li>
-                    </ul>
+                    <div className="flex flex-col gap-7">
+                      <div>
+                        <p>Hospital admission fees</p>
+                        <p>Emergency ambulatory service</p>
+                        <p>Urgent medical needs</p>
+                        <p>Medications</p>
+                      </div>
+
+                      <div className="flex flex-col gap-4">
+                        <hr />
+                        <div className="flex justify-items-end">
+                          <Button
+                            variant="outline"
+                            className="max-w-[126px] w-full"
+                          >
+                            Learn More
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="w-[502px] h-[360px] relative hidden lg:flex">
+              <div className="w-[502px] relative hidden lg:flex">
                 <img src={qrcode} alt="" />
               </div>
             </div>
           </AnimatedSection>
-          <AnimatedSection>
-            <div className="flex items-center justify-between rounded-[32px] sm:h-[380px] bg-[#F6F9FD] py-4 px-6 lg:pt-2 lg:pr-6">
-              <img src={map} alt="" className="hidden lg:flex" />
-              <div className="flex flex-col gap-2 justify-between mx-auto">
-                <div className="rounded-full bg-[#D9ECFF] text-xl font-black flex justify-center items-center text-white h-[40px] w-[40px]">
-                  <p>5</p>
-                </div>
 
-                <div className="flex flex-col gap-4 max-w-[450px] w-full">
-                  <h2 className="text-[30px] leading-[110%] text-[#343A40]">
+          {/* left */}
+          <AnimatedSection>
+            <div className="flex items-center justify-between gap-4 rounded-[32px] sm:h-[380px]  py-4 px-6 lg:pt-2 lg:pr-6 mt-[80px]">
+              <div className="w-[502px] relative hidden lg:flex">
+                <img src={map} alt="" />
+              </div>
+              <div className="flex flex-col gap-2 justify-between mx-auto">
+                <p className="text-[#1472B4] text-xs leading-[140%] tracking-[0.06px]">
+                  HealthHub & Business Transfer Service
+                </p>
+
+                <div className="flex flex-col gap-2 max-w-[470px] w-full text-[#333] leading-[140%]">
+                  <h2 className="text-xl font-medium">
                     Free Transfer anywhere around the world
                   </h2>
-                  <p className="text-sm leading-[160%] w-full text-[#505D69]">
-                    Create a custom card that reflects your uinque style and
-                    personality. Choose from a range of colors, patterns, and
-                    designs to customize the look of your card.
-                  </p>
+                  <div className="text-sm w-full tracking-[0.21px] flex flex-col gap-2 opacity-80 class-lato">
+                    <p>
+                      Businesses and Health Care providers can receive remote
+                      payments from anywhere globally, offering flexibility and
+                      convenience in managing their earnings.
+                    </p>
+                    <div className="flex flex-col gap-7">
+                      <div className="flex flex-col gap-4">
+                        <hr />
+                        <div className="flex justify-items-end">
+                          <Button
+                            variant="outline"
+                            className="max-w-[126px] w-full"
+                          >
+                            Learn More
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -177,48 +248,58 @@ export default function Main() {
         </div>
 
         <AnimatedSection>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="flex flex-col justify-between items-center h-[260px] rounded-[32px] bg-[#F6F9FD] py-2 px-4">
-              <div className="flex flex-col gap-2 m-auto w-full">
-                <img src={remoteIcon} alt="" className="max-w-[48px] w-full" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="flex flex-col justify-between items-center border border-[#F6F9FD] px-4 py-8 rounded-2xl">
+              <div className="flex flex-col gap-2 justify-between mx-auto">
+                <p className="text-[#1472B4] text-xs leading-[140%] tracking-[0.06px]">
+                  Network
+                </p>
 
-                <div className="flex flex-col gap-4">
-                  <h2 className="text-[30px] leading-[110%] text-[#343A40]">
-                    Get Paid Remotely
-                  </h2>
-                  <p className="text-sm leading-[160%] w-full  text-[#505D69]">
-                    Healthcare workers can receive remote payments from anywhere
-                    globally, offering flexibility and convenience in managing
-                    their earnings.
-                  </p>
+                <div className="flex flex-col gap-2 max-w-[470px] w-full text-[#333] leading-[140%]">
+                  <h2 className="text-xl font-medium">Partner with Us</h2>
+                  <div className="text-sm w-full tracking-[0.21px] flex flex-col gap-2 opacity-80 class-lato">
+                    <p>
+                      Partner with Oonpay for global visibility, fast payment
+                      remittances, and substantial business growth, leading to
+                      increased revenue and personal income. Elevate your brand
+                      in the international market.
+                    </p>
+                    <div className="flex flex-col gap-7">
+                      <div className="flex flex-col gap-4">
+                        <hr />
+                        <div className="flex justify-items-end">
+                          <Button
+                            variant="outline"
+                            className="max-w-[126px] w-full"
+                          >
+                            Learn More
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-between items-center h-[260px] rounded-[32px] bg-[#F6F9FD] py-2 px-4">
-              <div className="flex flex-col gap-2 m-auto w-full">
-                <img src={partnerIcon} alt="" className="max-w-[48px] w-full" />
+            <div className="flex flex-col justify-between items-center border border-[#F6F9FD] bg-black px-4 py-8 rounded-2xl">
+              <div className="flex flex-col gap-2 justify-between mx-auto">
+                <p className="text-[#1472B4] text-xs leading-[140%] tracking-[0.06px]">
+                  More Products
+                </p>
 
-                <div className="flex flex-col gap-4">
-                  <h2 className="text-[30px] leading-[110%] text-[#343A40]">
-                    Partner with Us
-                  </h2>
-                  <p className="text-sm leading-[160%] text-[#505D69]">
-                    Partner with Oonpay for global visibility, fast payment
-                    remittances, and substantial business growth, leading to
-                    increased revenue and personal income. Elevate your brand in
-                    the international market.
-                  </p>
+                <div className="flex flex-col gap-2 text-white leading-[140%]">
+                  <h2 className="text-xl font-medium">Partner with Us</h2>
+                  <div className="text-sm leading-[110%] tracking-[0.21px] flex flex-col gap-10 opacity-80 class-lato">
+                    <p>
+                      Check out our other product features that we have
+                      installed and we can't wait for you to join our team.
+                    </p>
+
+                    <Button variant="outline" className="max-w-[126px] w-full">
+                      View More
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="flex relative flex-col justify-center items-center rounded-[32px] bg-black h-[260px] py-2 px-4">
-              <div className="flex flex-col gap-[16px] max-w-[380px] w-full">
-                <h2 className="text-[30px] text-white leading-[110%]">
-                  Check our other product features
-                </h2>
-                <Button className="max-w-[172px] w-full" variant="primary">
-                  View More
-                </Button>
               </div>
             </div>
           </div>
