@@ -1,7 +1,7 @@
 .accordionContainer {
   display: flex;
   gap: 10px;
-  padding: 16px 0px;
+  padding: 16px 8px;
   align-items: flex-start;
   align-self: stretch;
   cursor: pointer;
@@ -12,3 +12,13 @@
   justify-content: space-between;
   overflow-y: auto;
 }
+
+.selected {
+  background: #EF582B;
+  border: none;
+}
+
+.selectedQuestion {
+  color: white; 
+}
+

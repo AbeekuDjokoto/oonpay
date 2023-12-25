@@ -1,12 +1,11 @@
 import React from "react";
-import hamburgerIcon from "../../../../assets/icons/hamburgerIcon.svg";
 
 export default function Menu() {
   const [open, setOpen] = React.useState(false);
   return (
     <header>
       <nav
-        className="mx-auto flex max-w-xl items-center justify-between p-4"
+        className="mx-auto flex max-w-xl items-center justify-between"
         aria-label="Global"
       >
         <div className="relative">
@@ -16,7 +15,16 @@ export default function Menu() {
             className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
             aria-expanded="false"
           >
-            <img src={hamburgerIcon} alt="" srcset="" />
+            <svg
+              width="42"
+              height="24"
+              viewBox="0 0 42 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="42" height="4" rx="2" fill="#EF582B" />
+              <rect y="20" width="42" height="4" rx="2" fill="#EF582B" />
+            </svg>
           </button>
           {open ? (
             <div className="absolute -right-0 top-full z-10 mt-8 w-screen max-w-[240px] overflow-hidden rounded-xl bg-[#0B4069]">

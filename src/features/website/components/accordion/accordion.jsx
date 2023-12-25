@@ -1,7 +1,6 @@
 import React from "react";
 import { Expandable } from "../Expandable";
 import styles from "./base.module.scss";
-import XIcon from "../../../../assets/icons/arrow-up.svg";
 import PlusIcon from "../../../../assets/icons/arrow-down.svg";
 import { accordionData } from "./mock";
 import { AnimatedSection } from "../AnimateSection";
@@ -27,13 +26,36 @@ export default function Accordion() {
               key={data.id}
               onClick={() => toggleAccordion(data.id)}
             >
-              <div className={styles.accordionContainer}>
-                <h3 className="text-sm leading-[150%] text-[#343A40]">
+              <div
+                className={`${styles.accordionContainer} ${
+                  openAccordionId === data.id ? styles.selected : ""
+                }`}
+              >
+                <h3
+                  className={`text-sm leading-[150%] text-[#333] ${
+                    openAccordionId === data.id ? styles.selectedQuestion : ""
+                  }`}
+                >
                   {data.question}
                 </h3>
                 {openAccordionId === data.id ? (
                   <>
-                    <img src={XIcon} alt="" />
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.9181 8.94922L13.3981 15.4692C12.6281 16.2392 11.3681 16.2392 10.5981 15.4692L4.07812 8.94922"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </>
                 ) : (
                   <>
